@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embro Noor - عالم التطريز العراقي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f5f0;
+            color: #4a3728;
+            scroll-behavior: smooth;
+        }
+        .linen-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            background-color: #f8f5f0;
+        }
+        .stitch-border {
+            border: 2px dashed #a67c52;
+            position: relative;
+        }
+        .fabric-patch {
+            background-color: #fffdfa;
+            box-shadow: 4px 4px 0px rgba(166, 124, 82, 0.2);
+            border: 1px solid rgba(166, 124, 82, 0.1);
+        }
+        .stitched-button {
+            background-color: #b45309;
+            color: #fef3c7;
+            border: 2px dashed rgba(255, 255, 255, 0.4);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 0px #78350f;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .embroidery-hoop {
+            border: 10px solid #8b4513;
+            border-radius: 50%;
+            padding: 8px;
+            background: #fff;
+            display: inline-block;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .hoop-screw {
+            width: 40px;
+            height: 20px;
+            background: #8b4513;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="linen-texture">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-[#f8f5f0]/90 backdrop-blur-md border-b-2 border-dashed border-[#a67c52]/30">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between h-20 items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl md:text-3xl font-black text-[#8b4513]">Embro Noor</span>
+                <span class="text-xl">🪡</span>
+            </div>
+            <div class="hidden md:flex gap-10 font-bold text-[#8b4513]">
+                <a href="#home" class="hover:underline decoration-dashed">الرئيسية</a>
+                <a href="#about" class="hover:underline decoration-dashed">ليش ويانا؟</a>
+                <a href="#courses" class="hover:underline decoration-dashed">الدورات</a>
+                <a href="#register" class="bg-[#b45309] text-white px-6 py-2 rounded-lg stitch-border">حجزي هسة</a>
+            </div>
+            <a href="#register" class="md:hidden bg-[#b45309] text-white px-4 py-2 rounded-lg text-sm font-bold">حجزي</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 space-y-8 text-center lg:text-right">
+                <h1 class="text-4xl md:text-7xl font-black leading-tight text-[#5d2e0d]">
+                    خيط وإبرة.. <br><span class="text-[#b45309]">ونرسم أحلامج!</span>
+                </h1>
+                <p class="text-lg md:text-xl text-[#6b4f3b] font-medium leading-relaxed">
+                    يا هلا بيج بعالم Embro Noor. تعلمي ويانا أصول التطريز اليدوي بأجواء بغدادية دافئة ودروس كلش سهلة.
+                </p>
+                <div class="flex justify-center lg:justify-start">
+                    <a href="#register" class="stitched-button px-10 py-5 rounded-xl font-black text-xl">ابدئي ويا نور 💌</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative flex justify-center">
+                <div class="embroidery-hoop relative">
+                    <div class="hoop-screw"></div>
+                    <div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-dashed border-[#f8f5f0]">
+                        <img src="hero.jpg" alt="تطريز نور الرئيسي" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-[#f0ede4]/50">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 text-right">
+            <div class="md:w-1/3 flex justify-center">
+                <div class="fabric-patch p-4 stitch-border rotate-3">
+                    <img src="about.jpg" alt="عن نور" class="w-48 h-64 object-cover rounded-lg shadow-md">
+                </div>
+            </div>
+            <div class="md:w-2/3 space-y-6">
+                <h2 class="text-3xl font-black text-[#5d2e0d]">ليش تشتركين ويانا؟</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="fabric-patch stitch-border p-6 rounded-2xl">
+                        <h3 class="font-bold text-[#b45309] mb-2">🏠 دورة من بيتج</h3>
+                        <p class="text-sm">تعلمي وإنتي مرتاحة، وبوقتج اللي يناسبج.</p>
+                    </div>
+                    <div class="fabric-patch stitch-border p-6 rounded-2xl">
+                        <h3 class="font-bold text-[#b45309] mb-2">🧵 متابعة حية</h3>
+                        <p class="text-sm">نور وياج خطوة بخطوة لحد ما تتقنين كل غرزة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-black text-center mb-16 text-[#5d2e0d]">دروسنا المطرّزة</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="fabric-patch stitch-border p-6 rounded-3xl flex items-center gap-6">
+                    <div class="embroidery-hoop w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
+                        <img src="course1.jpg" alt="أساسيات التطريز" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-right">
+                        <h3 class="text-xl font-bold text-[#5d2e0d]">أساسيات لزمة الإبرة</h3>
+                        <p class="text-sm text-[#6b4f3b] mb-4">من الصفر.. شلون تضمين الخيط وتبدين أول غرزة.</p>
+                        <button onclick="selectCourse('أساسيات لزمة الإبرة')" class="text-[#b45309] font-bold underline">حجزي مكانج</button>
+                    </div>
+                </div>
+                <div class="fabric-patch stitch-border p-6 rounded-3xl flex items-center gap-6">
+                    <div class="embroidery-hoop w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
+                        <img src="course2.jpg" alt="تطريز ورود" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div class="text-right">
+                        <h3 class="text-xl font-bold text-[#5d2e0d]">تطريز ورود البرازيل</h3>
+                        <p class="text-sm text-[#6b4f3b] mb-4">نتعلم الغرز البارزة والمجسمة وشلون نطلع الوردة ناطقة.</p>
+                        <button onclick="selectCourse('تطريز ورود البرازيل')" class="text-[#b45309] font-bold underline">حجزي مكانج</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register" class="py-24 px-6">
+        <div class="max-w-xl mx-auto fabric-patch stitch-border p-10 rounded-[40px]">
+            <h2 class="text-2xl font-black text-center mb-8 text-[#5d2e0d]">حجزي عن طريق الواتساب 💌</h2>
+            <form id="whatsappForm" class="space-y-6">
+                <input type="text" id="name" required placeholder="إسمج الحلو" class="w-full p-4 bg-white/70 border-2 border-dashed border-[#a67c52] rounded-2xl outline-none">
+                <input type="tel" id="phone" required placeholder="رقم الموبايل" class="w-full p-4 bg-white/70 border-2 border-dashed border-[#a67c52] rounded-2xl outline-none text-left" dir="ltr">
+                <select id="course" required class="w-full p-4 bg-white/70 border-2 border-dashed border-[#a67c52] rounded-2xl outline-none bg-white">
+                    <option value="">يا دورة حبيتي؟</option>
+                    <option value="أساسيات لزمة الإبرة">أساسيات لزمة الإبرة</option>
+                    <option value="تطريز ورود البرازيل">تطريز ورود البرازيل</option>
+                </select>
+                <button type="submit" class="w-full stitched-button py-5 rounded-2xl text-xl font-black">إرسال لنوارة ✨</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-[#a67c52] font-bold">صُنع بكل حب في بغداد 🇮🇶</footer>
+
+    <script>
+        // نوارة: غيري هذا الرقم لرقمج الحقيقي (مثلاً 9647700000000)
+        const NAWARA_PHONE = "9647700000000"; 
+
+        function selectCourse(name) {
+            document.getElementById('course').value = name;
+            document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            const msg = `هلو نوارة، أكو طالبة سجلت بالموقع:\n\n👤 الاسم: ${name}\n📱 الموبايل: ${phone}\n🧵 الدورة: ${course}`;
+            window.open(`https://wa.me/${NAWARA_PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
+        });
+    </script>
+</body>
+</html>
+
